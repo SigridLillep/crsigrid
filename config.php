@@ -2,7 +2,7 @@
 
 $db_server = 'localhost';
 $db_andmebaas = 'crsigrid';
-$db_kasutaja = 'Sigrid';
+$db_kasutaja = 'sigrid';
 $db_salasona = 'Passw0rd';
 
 // ühendus andmebaasiga
