@@ -1,4 +1,5 @@
 PHP ja MYSQL
+XAMPP Control Panel v3.3.0
 
 https://github.com/metshein/car_rent
 
@@ -8,3 +9,4 @@ siis klooni githubist sinna uuesti + xamppis pane apache ja mysql tööle, mysql
 http://localhost/crsigrid/
 
 Kui xamppis mysql ei lähe tööle (annab errorit), siis C:\xampp\mysql siin kaustas tee backup ja data kaustast koopia, siis kustuta algne data kaust täiesti ära ja muuda backup-koopia nimi data'ks.
+
