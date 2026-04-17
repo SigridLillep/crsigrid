@@ -1,4 +1,6 @@
 <?php
+    include("config.php");
+
     if (!empty($_GET)) {
         $mark = $_GET['mark'];
         $model = $_GET['model'];
@@ -9,7 +11,14 @@
 
         $paring = "INSERT INTO cars (mark, model, engin, fuel, price, image) VALUES ('".$mark."', '".$model."', '".$engin."', '".$fuel."', '".$price."', '".$image."')";
 
-        print_r($paring);
+        $valjund = mysqli_query($yhendus, $paring);
+        $tulemus = mysqli_affected_rows($yhendus);
+
+        if ($tulemus == 1) {
+            header("Location: admin.php");
+        }
+
+
     }
 ?>
 

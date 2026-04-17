@@ -3,14 +3,15 @@
 
 <table border="1">
     <tr>
-        <td>Mark</td>
-        <td>Model</td>
-        <td>Engin</td>
-        <td>Fuel</td>
-        <td>Price</td>
-        <td>Image</td>
-        <td>Kustuta</td>
-        <td>Muuda</td>
+        <td><strong>ID</td>
+        <td><strong>Mark</td>
+        <td><strong>Model</td>
+        <td><strong>Engin</td>
+        <td><strong>Fuel</td>
+        <td><strong>Price</td>
+        <td><strong>Image</td>
+        <td><strong>Kustuta</td>
+        <td><strong>Muuda</td>
     </tr>
 
 
@@ -18,12 +19,13 @@
 
 include("config.php"); 
 
-$paring = "SELECT * FROM cars LIMIT 8";
+$paring = "SELECT * FROM cars ORDER BY id DESC";
 $valjund = mysqli_query($yhendus, $paring); // mysql käsu saatmine andmebaasile
 
 while($rida = mysqli_fetch_assoc($valjund)){
     //var_dump($rida);
     echo "<tr>
+    <td>".$rida['id']."</td>
     <td>".$rida['mark']."</td>
     <td>".$rida['model']."</td>
     <td>".$rida['engin']."</td>
