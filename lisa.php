@@ -15,7 +15,8 @@
         $tulemus = mysqli_affected_rows($yhendus);
 
         if ($tulemus == 1) {
-            header("Location: admin.php");
+            header("Location: admin.php?added=1");
+            exit();
         }
 
 

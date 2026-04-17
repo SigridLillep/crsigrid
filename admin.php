@@ -8,6 +8,10 @@ if (isset($_GET['updated']) && $_GET['updated'] == 1) {
 if (isset($_GET['deleted']) && $_GET['deleted'] == 1) {
     $teade = "Kustutatud!";
 }
+
+if (isset($_GET['added']) && $_GET['added'] == 1) {
+    $teade = "Lisatud!";
+}
 ?>
 
 <?php if (!empty($teade)) { ?>
