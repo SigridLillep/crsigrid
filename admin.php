@@ -1,3 +1,39 @@
+<?php
+$teade = "";
+
+if (isset($_GET['updated']) && $_GET['updated'] == 1) {
+    $teade = "Muudetud!";
+}
+
+if (isset($_GET['deleted']) && $_GET['deleted'] == 1) {
+    $teade = "Kustutatud!";
+}
+?>
+
+<?php if (!empty($teade)) { ?>
+    <div id="teaderiba" style="
+        background-color: #fff3cd;
+        color: #856404;
+        border: 1px solid #ffeeba;DD
+        padding: 12px 18px;
+        margin: 15px 0;
+        border-radius: 6px;
+        width: fit-content;
+        font-family: Arial, sans-serif;
+    ">
+        <?php echo $teade; ?>
+    </div>
+<?php } ?>
+
+<script>
+setTimeout(function() {
+    var teade = document.getElementById("teaderiba");
+    if (teade) {
+        teade.style.display = "none";
+    }
+}, 3000);
+</script>
+
 <h1>Admin</h1>
 <a href="lisa.php">+ Lisa auto</a><br>
 

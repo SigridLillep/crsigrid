@@ -22,9 +22,10 @@
    
         $valjund = mysqli_query($yhendus, $paring);
         $tulemus = mysqli_affected_rows($yhendus);
-            if ($tulemus == 1) {
-                header("Location: admin.php");
-            }
+        if ($tulemus == 1) {
+            header("Location: admin.php?updated=1");
+            exit();
+        }
         }
 
         $paring = "SELECT * FROM cars WHERE id=".$_GET['id']."";
