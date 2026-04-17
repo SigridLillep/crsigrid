@@ -7,7 +7,9 @@
         $price = $_GET['price'];
         $image = $_GET['image'];
 
-        $paring = "INSERT INTO cars (id, mark, model, engin, fuel, price, image) VALUES (NULL, 'cghk', 'ghck', 'cghk', 'bensiin', '100', 'cghk')";
+        $paring = "INSERT INTO cars (mark, model, engin, fuel, price, image) VALUES ('".$mark."', '".$model."', '".$engin."', '".$fuel."', '".$price."', '".$image."')";
+
+        print_r($paring);
     }
 ?>
 
