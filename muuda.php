@@ -21,7 +21,7 @@
     // }
 ?>
 
-<form action="lisa.php" method="get">
+<form action="muuda.php" method="get">
     Mark <input type="text" name="mark" value="<?php echo $rida['mark']; ?>"><br>
     Model <input type="text" name="model" value="<?php echo $rida['model']; ?>"><br>
     Engin <input type="text" name="engin" value="<?php echo $rida['engin']; ?>"><br>
